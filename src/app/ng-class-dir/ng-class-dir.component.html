@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row align-items-start">
+    <p 
+      [ngClass] = "{
+        classOne: classOneFlag,
+        classTwo: classTwoFlag,
+        classThree: classThreeFlag
+      }"
+    >
+      The size, font and color of this paragraph is going to be changed when the user clicks on one of the next buttons
+    </p>
+  </div>
+  <div class="row align-items-end">
+    <div class="col-lg-2">
+      <button #btnOne id='one' type="button" class="btn btn-danger" (click)="chooseClass(btnOne.id)">ClassOne</button>
+    </div>
+    <div class="col-lg-2">
+      <button #btnTwo id='two' type="button" class="btn btn-warning" (click)="chooseClass(btnTwo.id)">ClassTwo</button>
+    </div>
+    <div>
+      <button #btnThree id='three' type="button" class="btn btn-primary" (click)="chooseClass(btnThree.id)">ClassThree</button>
+    </div>
+  </div>
+</div>

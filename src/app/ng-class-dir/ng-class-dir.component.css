@@ -1,0 +1,17 @@
+.classOne {
+    font-size: 100%;
+    font-family: "Arial Black";
+    color: red;
+}
+
+.classTwo {
+    font-size: 150%;
+    font-family: "Comic Sans MS";
+    color: yellow;
+}
+
+.classThree {
+    font-size: 200%;
+    font-family: "Courier New";
+    color: blue;
+}
